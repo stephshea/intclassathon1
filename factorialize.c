@@ -2,18 +2,29 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
+factorialize();
 
+int main(void)
+{
+   factorialize();
+   return 0;
+}
+
+factorialize()
+{
 int num = get_int("Enter num: ");
+printf("num%i: \n", num);
 
 int i;
-long long factorialize = 1;
+long long factor = 1;
 
 for (i = 1; i<=num; i++)
     {
-        factorialize *=i;
+    factor *=i;
     }
 
     printf("factorialize = %lld \n", factorialize);
 }
+
+
+
