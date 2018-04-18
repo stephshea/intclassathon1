@@ -12,19 +12,18 @@ int main(void)
 
 factorialize()
 {
-int num = get_int("Enter num: ");
-printf("num%i: \n", num);
 
 int i;
+int num = 0;
 long long factor = 1;
+
+num = get_int("Enter num: ");
 
 for (i = 1; i<=num; i++)
     {
-    factor *=i;
+        factor *=i;
     }
-
-    printf("factorialize = %lld \n", factorialize);
+    printf("factorialize = %lld \n", factor);
 }
-
 
 
