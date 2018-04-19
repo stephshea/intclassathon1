@@ -37,5 +37,21 @@ for (i = 1; i<=num; i++)
     printf("factorialize = %lld \n", factorialize);
 }
 
+fib
+(int num)
+int first = 0;
+int last =1;
+int sum_odds = 1
+int sum = 0
 
+sum<= num
+{
+    sum = first  + last
+    first  lat
+    last = sum
+    if (sum %2 != 0 && sum <= num
+    {
 
+        sum_odds num
+    })
+}
