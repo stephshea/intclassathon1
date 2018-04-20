@@ -2,28 +2,39 @@
 #include <stdio.h>
 #include <math.h>
 
-factorialize();
+long long factorialize(int num);
 
-int main(void)
+int main(int argc, string argv[])
+
 {
-   factorialize();
-   return 0;
+    int num;
+
+    if (argc == 2) //check if 2 arguments are entered on command line
+    {
+        num = atoi(argv[1]); //assign argv[1] string to int
+    }
+
+     else
+    {
+        printf("you must enter 2 args\n"); //display error if use does not enter two args
+        return 1; //end program
+    }
+
+    printf("factorialized num %i = %lld\n", num, factorialize(num));
+    return 0;
 }
 
-factorialize()
+
+long long factorialize(int num)
 {
 
-int i;
-int num = 0;
 long long factor = 1;
 
-num = get_int("Enter num: ");
-
-for (i = 1; i<=num; i++)
+for (int i = 1; i<=num; i++)
     {
-        factor *=i;
+    factor *=i;
     }
-    printf("factorialize = %lld \n", factor);
-}
 
+    return factor;
+}
 
