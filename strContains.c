@@ -18,10 +18,12 @@ string str2 = get_string("enter string2: ");
 if (strcasestr(str1, str2) != NULL)
     {
         printf("The string exists \n 0 \n");
+        return 0;
     }
 else
     {
         printf("The string does not exist\n 1 \n");
+        return 1;
     }
 }
 // }
