@@ -2,8 +2,6 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
-
-#include <stdio.h>
 #include <ctype.h>
 
 int case_compare(char *a, char *b)
